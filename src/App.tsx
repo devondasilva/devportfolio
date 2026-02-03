@@ -1,5 +1,7 @@
 // src/App.tsx
 import Gallery from './components/Gallery';
+import logo from '../src/assets/img/logo_en.svg';
+import poster from '../src/assets/img/poster.png';
 import { myProjects } from './data/projects';
 import './index.css'
 
@@ -8,7 +10,7 @@ function App() {
     <div className="min-h-screen bg-white font-sans   ">
       {/* Navigation / Header */}
       <nav className="p-8 flex justify-between items-center border-b border-gray-100">
-        <img src="src/assets/img/logo_en.svg" alt="Logo Design.PRO" className="w-30 h-auto" />
+        <img src={logo} alt="Logo Design.PRO" className="w-30 h-auto" />
         <ul className="flex justify-center items-center gap-8 text-sm font-medium text-gray-600">
           <li className="hover:text-black cursor-pointer">Projects</li>
           <li className="hover:text-black cursor-pointer">About me</li>
@@ -30,7 +32,7 @@ function App() {
               Expert in brand identity and premium UI/UX design. Transforming your vision into unforgettable digital journeys.
             </p>
           </div>
-          <img src="/src/assets/img/poster.png" alt="poster" className='w-100 h-auto' />
+          <img src={poster} alt="poster" className='w-100 h-auto' />
         </div>
        
       </header>

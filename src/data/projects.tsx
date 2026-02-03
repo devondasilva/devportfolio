@@ -1,5 +1,7 @@
 // src/data/projects.ts
 import type { Project } from '../types/Project';
+import img1 from '../../src/assets/img/img1.png';
+import img2 from '../../src/assets/img/img2.png';
 
 export const myProjects: Project[] = [
   {
@@ -7,7 +9,7 @@ export const myProjects: Project[] = [
     title: 'Modern Branding Fashion',
     category: 'Branding',
     description: 'Une refonte complète pour une startup Fintech.',
-    imageUrl: 'src/assets/img/img1.png', // Chemin vers ton image
+    imageUrl: img1, // Chemin vers ton image
     tags: ['Illustrator', 'Strategy', 'Logo']
   },
   {
@@ -15,7 +17,7 @@ export const myProjects: Project[] = [
     title: 'General Company',
     category: 'UI/UX',
     description: 'Interface utilisateur minimaliste pour gestion de wallet.',
-    imageUrl: 'src/assets/img/img2.png',
+    imageUrl: img2,
     tags: ['Figma', 'Prototyping', 'React']
   }
 ];
