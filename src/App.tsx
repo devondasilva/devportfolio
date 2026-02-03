@@ -9,11 +9,11 @@ function App() {
       {/* Navigation / Header */}
       <nav className="p-8 flex justify-between items-center border-b border-gray-100">
         <img src="src/assets/img/logo_en.svg" alt="Logo Design.PRO" className="w-30 h-auto" />
-        <ul className="flex gap-8 text-sm font-medium text-gray-600">
-          <li className="hover:text-black cursor-pointer">Projets</li>
-          <li className="hover:text-black cursor-pointer">À propos</li>
+        <ul className="flex justify-center items-center gap-8 text-sm font-medium text-gray-600">
+          <li className="hover:text-black cursor-pointer">Projects</li>
+          <li className="hover:text-black cursor-pointer">About me</li>
           <li className="px-4 py-2 bg-black text-white rounded-full cursor-pointer hover:bg-gray-800 transition">
-            Me contacter
+            Contact me
           </li>
         </ul>
       </nav>

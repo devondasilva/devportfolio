@@ -1,1 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 257"><defs><linearGradient id="IconifyId1813088fe1fbc01fb466" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%"><stop offset="0%" stop-color="#41D1FF"></stop><stop offset="100%" stop-color="#BD34FE"></stop></linearGradient><linearGradient id="IconifyId1813088fe1fbc01fb467" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%"><stop offset="0%" stop-color="#FFEA83"></stop><stop offset="8.333%" stop-color="#FFDD35"></stop><stop offset="100%" stop-color="#FFA800"></stop></linearGradient></defs><path fill="url(#IconifyId1813088fe1fbc01fb466)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"></path><path fill="url(#IconifyId1813088fe1fbc01fb467)" d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"></path></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.36 154.34">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #333;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: Lexend-Light, Lexend;
+        font-size: 15.25px;
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        font-family: Lexend-ExtraBold, Lexend;
+        font-size: 21.04px;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-7 {
+        fill: #8dc63f;
+      }
+
+      .cls-8 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-1" x="85.4" y="12.9" width="79.81" height="77.49" rx="9.58" ry="9.58" transform="translate(73.22 -73.48) rotate(45)"/>
+      <g>
+        <path class="cls-5" d="M116.33,79.02c-.89,0-1.8-.18-2.68-.55-2.55-1.08-4.13-3.47-4.13-6.23,0-1.27,1.03-2.3,2.3-2.3s2.3,1.03,2.3,2.3c0,1.33,1.01,1.87,1.32,2,.31.13,1.4.49,2.36-.44l21.25-20.59c.43-.41.66-.97.66-1.56s-.23-1.15-.66-1.56l-21.25-20.59c-.96-.93-2.05-.57-2.36-.44-.31.13-1.33.67-1.33,2s-1.03,2.3-2.3,2.3-2.3-1.03-2.3-2.3c0-2.77,1.58-5.16,4.13-6.23,2.55-1.08,5.37-.55,7.35,1.37l21.25,20.59c1.33,1.29,2.06,3.01,2.06,4.86s-.73,3.58-2.06,4.86l-21.25,20.59c-1.3,1.26-2.97,1.92-4.67,1.92Z"/>
+        <path class="cls-7" d="M123.01,64.42c-.58,0-1.15-.21-1.6-.65l-8.28-8.01c-1.12-1.09-1.74-2.55-1.74-4.11s.62-3.02,1.74-4.11l8.28-8.01c.91-.88,2.37-.86,3.25.05s.86,2.37-.05,3.25l-8.28,8.01c-.3.29-.34.63-.34.81s.04.52.34.81l8.28,8.01c.91.88.94,2.34.05,3.25-.45.47-1.05.7-1.65.7Z"/>
+      </g>
+      <text class="cls-3" transform="translate(0 130.24)"><tspan class="cls-8" x="0" y="0">D</tspan><tspan x="16.05" y="0">AS COMMUN</tspan><tspan class="cls-11" x="153.91" y="0">I</tspan><tspan x="166.01" y="0">C</tspan><tspan class="cls-6" x="180.76" y="0">A</tspan><tspan class="cls-9" x="194.26" y="0">T</tspan><tspan class="cls-11" x="208.8" y="0">I</tspan><tspan class="cls-4" x="220.9" y="0">ON</tspan></text>
+      <text class="cls-2" transform="translate(45.11 150.72)"><tspan x="0" y="0">EVER MORE CRE</tspan><tspan class="cls-10" x="121.04" y="0">A</tspan><tspan x="130.55" y="0">TIVE</tspan></text>
+    </g>
+  </g>
+</svg>

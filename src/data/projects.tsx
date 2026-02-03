@@ -7,7 +7,7 @@ export const myProjects: Project[] = [
     title: 'Modern Branding Fashion',
     category: 'Branding',
     description: 'Une refonte complète pour une startup Fintech.',
-    imageUrl: 'src/assets/img/h1.jpg', // Chemin vers ton image
+    imageUrl: 'src/assets/img/img1.png', // Chemin vers ton image
     tags: ['Illustrator', 'Strategy', 'Logo']
   },
   {
@@ -15,7 +15,7 @@ export const myProjects: Project[] = [
     title: 'General Company',
     category: 'UI/UX',
     description: 'Interface utilisateur minimaliste pour gestion de wallet.',
-    imageUrl: 'src/assets/img/logcal.png',
+    imageUrl: 'src/assets/img/img2.png',
     tags: ['Figma', 'Prototyping', 'React']
   }
 ];
