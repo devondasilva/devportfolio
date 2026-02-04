@@ -4,7 +4,6 @@ import poster from '../assets/img/poster.png';
 import { myProjects } from '../data/projects';
 import '../index.css';
 import Nav from '../components/Nav';
-import { Icon } from '@mui/material'; // Si tu l'utilises toujours pour les flèches
 
 const Home: React.FC = () => {
   const brandColor = "#8DC63F";
