@@ -57,41 +57,173 @@ const Home: React.FC = () => {
       </header>
 
       {/* --- SERVICES / EXPERTISE SECTION --- */}
-      <section className="py-20 bg-slate-50 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              { title: "Brand Identity", desc: "Creating unique visual languages that resonate with your audience." },
-              { title: "UI/UX Design", desc: "User-centric interfaces that are beautiful to look at and easy to use." },
-              { title: "Motion Design", desc: "Bringing your brand to life with smooth and engaging animations." }
-            ].map((service, i) => (
-              <div key={i} className="group cursor-default">
-                <div className="w-12 h-1 mb-4 rounded-full" style={{ backgroundColor: brandColor }}></div>
-                <h4 className="text-xl font-bold mb-3">{service.title}</h4>
-                <p className="text-gray-500 leading-relaxed">{service.desc}</p>
-              </div>
+      <section className="py-24 md:py-32 bg-white relative overflow-hidden">
+  {/* Subtil fond décoratif */}
+  <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
+    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="black" strokeWidth="1"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)" />
+    </svg>
+  </div>
+
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
+    {/* En-tête de section */}
+    <div className="mb-16 md:mb-24">
+      <h3 className="text-xs font-black uppercase tracking-[0.5em] mb-4" style={{ color: brandColor }}>
+        Expertise
+      </h3>
+      <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900">
+        Design Solutions <br /> Built for Impact.
+      </h2>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
+      {[
+        { 
+          title: "Brand Identity", 
+          desc: "Crafting distinct visual narratives that define your essence and command attention in crowded markets.",
+          tags: ["Logos", "Guidelines", "Stationery"]
+        },
+        { 
+          title: "UI/UX Design", 
+          desc: "Developing seamless digital interfaces that balance aesthetic elegance with intuitive user functionality.",
+          tags: ["Mobile", "Web", "Prototypes"]
+        },
+        { 
+          title: "Motion Design", 
+          desc: "Injecting life into static brands through high-end motion graphics and interactive story-telling.",
+          tags: ["Animation", "3D", "Reels"]
+        }
+      ].map((service, i) => (
+        <div 
+          key={i} 
+          className="group relative p-8 md:p-10 bg-slate-50 rounded-[2.5rem] border border-transparent hover:border-slate-200 hover:bg-white hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500 flex flex-col h-full"
+        >
+          {/* Index stylisé */}
+          <span className="text-5xl font-black opacity-[0.05] absolute top-8 right-8 group-hover:opacity-10 transition-opacity">
+            0{i + 1}
+          </span>
+
+          {/* Accent bar animé */}
+          <div 
+            className="w-12 h-1.5 mb-8 rounded-full transition-all duration-500 group-hover:w-24" 
+            style={{ backgroundColor: brandColor }}
+          ></div>
+
+          <h4 className="text-2xl font-black mb-4 tracking-tight group-hover:translate-x-1 transition-transform">
+            {service.title}
+          </h4>
+
+          <p className="text-slate-500 leading-relaxed mb-8 flex-grow">
+            {service.desc}
+          </p>
+
+          {/* Tags de service */}
+          <div className="flex flex-wrap gap-2 mt-auto">
+            {service.tags.map(tag => (
+              <span key={tag} className="text-[10px] font-bold uppercase tracking-widest px-3 py-1 bg-white border border-slate-100 rounded-full text-slate-400">
+                {tag}
+              </span>
             ))}
           </div>
+
+          {/* Icône de flèche subtile au survol */}
+          <div className="absolute bottom-10 right-10 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ stroke: brandColor }} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+             </svg>
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* --- PROJECTS GALLERY SECTION --- */}
-      <main className="max-w-[95%] mx-auto my-12 md:my-20 bg-[#1a1a1a] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl">
-        <div className="px-6 md:px-16 pt-12 md:pt-20 pb-10">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <h3 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
-                Selected Work
-              </h3>
-              <p className="text-gray-500 mt-2">A curated list of my best designs.</p>
-            </div>
-            <div className="hidden md:block w-20 h-[1px] bg-gray-700 mb-4"></div>
-          </div>
-          
-          <div className="flex justify-center">
-            <Gallery projects={myProjects} />
-          </div>
+      <main className="max-w-[95%] mx-auto my-12 md:my-20 bg-slate-900 rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-2xl">
+        <div className="px-6 md:px-16 pt-16 md:pt-28 pb-16 relative">
+  {/* Header Section avec un design asymétrique */}
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-8">
+        <div className="relative">
+        {/* Petit badge vertical sur le côté */}
+        <div 
+            className="absolute -left-6 md:-left-10 top-2 h-full w-[2px] opacity-50"
+            style={{ backgroundColor: brandColor }}
+        ></div>
+        
+        <h3 className="text-4xl md:text-7xl font-black text-white tracking-tighter leading-none">
+            Selected <br />
+            <span className="text-transparent outline-text italic" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>Work</span>
+        </h3>
+        
+        <p className="text-gray-400 mt-6 text-lg font-medium max-w-sm leading-relaxed">
+            A curated collection of visual narratives and digital experiences built to <span className="text-white">stand out.</span>
+        </p>
         </div>
+
+        {/* Section interactive à droite : Compteur de projets */}
+        <div className="flex flex-col items-end">
+        <div className="flex items-center gap-4 mb-4">
+            <span className="text-gray-600 font-bold tracking-[0.3em] uppercase text-xs">Portfolio Vol. 01</span>
+            <div className="w-12 h-[1px] bg-gray-800"></div>
+            <span 
+            className="text-2xl font-black italic" 
+            style={{ color: brandColor }}
+            >
+            {myProjects.length < 10 ? `0${myProjects.length}` : myProjects.length}
+            </span>
+        </div>
+        
+        {/* Petit bouton discret pour inciter au scroll */}
+        <div className="flex items-center gap-2 text-gray-500 animate-pulse">
+            <span className="text-[10px] font-bold uppercase tracking-widest">Scroll to explore</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+            <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+            </svg>
+        </div>
+        </div>
+    </div>
+
+  {/* Conteneur Galerie avec un effet de profondeur */}
+  <div className="relative group">
+    {/* Glow discret derrière la galerie pour la faire ressortir du fond noir */}
+    <div 
+      className="absolute inset-0 blur-[150px] opacity-[0.05] pointer-events-none"
+      style={{ backgroundColor: brandColor }}
+    ></div>
+
+    <div className="relative z-10 flex justify-center transition-all duration-700">
+      <Gallery projects={myProjects} />
+    </div>
+  </div>
+
+  {/* Footer de section optionnel : Lien vers "All Projects" */}
+  <div className="mt-16 md:mt-24 flex justify-center">
+    <a 
+      href="/Myprojects" 
+      className="group flex items-center gap-4 text-white no-underline transition-all"
+    >
+      <span className="text-sm font-black uppercase tracking-[0.3em]">View full archive</span>
+      <div className="relative flex items-center justify-center w-12 h-12 rounded-full border border-gray-700 group-hover:border-white transition-colors">
+        <svg 
+          width="20" height="20" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="currentColor" 
+          strokeWidth="2.5" 
+          className="group-hover:translate-x-1 transition-transform"
+        >
+          <path d="M5 12h14m-7-7 7 7-7 7" />
+        </svg>
+      </div>
+    </a>
+  </div>
+</div>
       </main>
 
       {/* --- RECENT POSTS / READ SECTION --- */}
@@ -101,16 +233,150 @@ const Home: React.FC = () => {
       </section> */}
 
       {/* --- CALL TO ACTION --- */}
-      <section className="py-24 text-center px-6">
-        <h2 className="text-4xl md:text-6xl font-black mb-8">Ready to start a project?</h2>
-        <a 
-          href="mailto:hello@devon.com" 
-          className="text-3xl md:text-5xl font-bold underline decoration-4 underline-offset-[12px] hover:brightness-110 transition-all"
-          style={{ textDecorationColor: brandColor }}
-        >
-          hello@devon.com
-        </a>
-      </section>
+     <section className="relative py-24 md:py-32 overflow-hidden bg-[#121212] rounded-[2rem] md:rounded-[4rem] mx-4 md:mx-8 my-20">
+  
+  {/* Decorative Blurred Background (Green Glow) */}
+  <div 
+    className="absolute top-0 right-0 w-[300px] h-[300px] blur-[120px] opacity-20 rounded-full"
+    style={{ backgroundColor: brandColor }}
+  ></div>
+  <div 
+    className="absolute bottom-0 left-0 w-[250px] h-[250px] blur-[100px] opacity-10 rounded-full"
+    style={{ backgroundColor: brandColor }}
+  ></div>
+
+  <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+    
+    {/* Small Tagline */}
+    <span 
+      className="inline-block px-4 py-1.5 rounded-full text-xs font-black tracking-[0.3em] uppercase mb-8 border transition-all hover:scale-105 cursor-default"
+      style={{ color: brandColor, borderColor: `${brandColor}40` }}
+    >
+      Next Step
+    </span>
+
+    {/* Big Heading */}
+    <h2 className="text-5xl md:text-8xl font-black text-white mb-10 tracking-tighter leading-none">
+      Let's work <br />
+      <span className="italic" style={{ color: brandColor }}>together.</span>
+    </h2>
+
+    <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-16 leading-relaxed">
+      Whether you have a fully-formed idea or just a spark of inspiration, 
+      I’m here to help you turn it into a <span className="text-white font-bold">visual masterpiece.</span>
+    </p>
+
+    {/* Email Link Styled as a Massive Interaction Area */}
+    <div className="group relative inline-block">
+      <a 
+        href="mailto:dasilvadevon51@gmail.com" 
+        className="relative text-2xl md:text-5xl font-bold text-white transition-all duration-300 group-hover:opacity-80 break-all md:break-normal"
+      >
+        dasilvadevon51@gmail.com
+        
+        {/* Animated Underline */}
+        <span 
+          className="block h-[3px] md:h-[5px] w-full mt-4 rounded-full transition-all duration-500 origin-left scale-x-100 group-hover:scale-x-110"
+          style={{ backgroundColor: brandColor }}
+        ></span>
+      </a>
+      
+      {/* "Send me an email" Hint that appears on hover */}
+      <p className="mt-6 text-sm font-bold tracking-widest text-gray-500 uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        Click to send me an email
+      </p>
+    </div>
+
+    {/* Social Links Row */}
+    <div className="mt-24 border-t border-white/5 pt-12">
+  <p className="text-gray-500 text-xs font-black uppercase tracking-[0.4em] mb-10 text-center">
+    Let's Connect
+  </p>
+  
+  <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+    {[
+      { 
+        name: 'Instagram', 
+        url: 'https://www.instagram.com/devondasilva5?igsh=MWNsd2FucjE2ZnJzbg%3D%3D&utm_source=qr', 
+        handle: '@devondasilva5' 
+      },
+      { 
+        name: 'LinkedIn', 
+        url: 'https://www.linkedin.com/in/honore-da-silva-b02561194', 
+        handle: 'Devon Da Silva' 
+      },
+      { 
+        name: 'facebook', 
+        url: 'https://www.facebook.com/devon.dasilva.37', 
+        handle: 'devon_dasilva' 
+      }
+    ].map((social) => (
+      <a 
+        key={social.name} 
+        href={social.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex flex-col items-center md:items-start transition-all"
+      >
+        {/* Top row: Name + Small Arrow */}
+        <div className="flex items-center gap-1">
+          <span className="text-gray-400 font-bold uppercase tracking-widest text-[10px] md:text-xs group-hover:text-white transition-colors">
+            {social.name}
+          </span>
+          <svg 
+            viewBox="0 0 24 24" 
+            className="w-3 h-3 fill-none stroke-current transition-transform duration-300 -rotate-45 group-hover:rotate-0"
+            style={{ color: brandColor }}
+          >
+            <path d="M5 12h14m-7-7 7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+
+        {/* Bottom row: Handle (The stylish part) */}
+        <span className="text-white text-sm md:text-base font-medium opacity-40 group-hover:opacity-100 transition-opacity">
+          {social.handle}
+        </span>
+        
+        {/* Animated Underline for each link */}
+        <span 
+          className="h-[1px] w-0 group-hover:w-full transition-all duration-300 mt-1"
+          style={{ backgroundColor: brandColor }}
+        ></span>
+      </a>
+    ))}
+  </div>
+
+  {/* Timezone / Availability status - Add more content as requested */}
+  <div className="mt-20 flex justify-center">
+    <div className="bg-white/[0.03] border border-white/10 px-8 py-4 rounded-2xl flex flex-col md:flex-row items-center gap-4 transition-all hover:border-white/20">
+        <div className="flex items-center gap-3">
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75" style={{ backgroundColor: brandColor }}></span>
+            <span className="relative inline-flex rounded-full h-3 w-3" style={{ backgroundColor: brandColor }}></span>
+          </span>
+          <span className="text-gray-400 text-sm font-bold uppercase tracking-tighter">
+            Current Status: <span className="text-white">Available for hire</span>
+          </span>
+        </div>
+
+        <div className="hidden md:block w-[1px] h-4 bg-white/10"></div>
+
+        <span className="text-gray-400 text-sm font-medium tracking-wide">
+          Based in <span className="text-white font-bold tracking-normal">Washington, DC</span> — 
+          <span className="ml-2 text-white tabular-nums">
+            {new Date().toLocaleTimeString('en-US', {
+              timeZone: 'America/New_York',
+              hour: '2-digit', 
+              minute: '2-digit',
+              hour12: true 
+            })} EST
+          </span>
+        </span>
+    </div>
+  </div> 
+</div>
+  </div>
+</section>
 
       {/* --- FOOTER --- */}
       <footer className="bg-white py-12 px-6 border-t border-slate-100">

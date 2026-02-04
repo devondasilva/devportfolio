@@ -10,7 +10,7 @@ const Gallery: React.FC<GalleryProps> = ({ projects }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
       {projects.map((project) => (
-        <div key={project.id} className="group relative overflow-hidden rounded-xl bg-gray-100 shadow-lg">
+        <div key={project.id} className="group relative overflow-hidden rounded-xl bg-slate-900 shadow-lg">
           {/* Image avec effet de zoom au survol */}
           <img 
             src={project.imageUrl} 
