@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/img/logo_en.svg';
+import logo from '../assets/img/log.svg';
 import '../index.css';
 
 const Nav: React.FC = () => {
