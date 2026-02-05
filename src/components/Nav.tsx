@@ -18,7 +18,7 @@ const Nav: React.FC = () => {
 
     return (
         <>
-            <nav className={`top-0 left-0 w-full z-[100] transition-all duration-300 ${
+            <nav className={`top-0 left-0 w-full z-[100] bg-white transition-all duration-300 ${
                 scrolled ? 'bg-white/80 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6 md:py-8'
             }`}>
                 <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">

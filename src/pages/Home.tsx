@@ -1,19 +1,40 @@
 import React from 'react';
-import Gallery from '../components/Gallery';
 import poster from '../assets/img/poster.png';
-import { myProjects } from '../data/projects';
 import '../index.css';
 import Nav from '../components/Nav';
 
 const Home: React.FC = () => {
   const brandColor = "#8DC63F";
 
+  const visual = [
+    { 
+          id: 1,
+          title: "Magazine Sport Events", 
+          desc: "Crafting distinct visual narratives that define your essence and command attention in crowded markets.",
+          link: "/Brand",
+          tags: ["Design", "Publicity", "Campaigns"]
+        },
+        { 
+          id: 2,
+          title: "Logo Showcase", 
+          desc: "Developing seamless digital interfaces that balance aesthetic elegance with intuitive user functionality.",
+          tags: ["Brand", "Web", "Prototypes"],
+          link: "/LogoShow"
+        },
+        { 
+          id: 3,
+          title: "Web Design", 
+          desc: "Injecting life into static brands through high-end motion graphics and interactive story-telling.",
+          tags: ["UI/UX", "Web", "Reels"],
+          link: "/WebDesign"
+        }]
+
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#8DC63F] selection:text-white">
       <Nav />
 
       {/* --- HERO SECTION --- */}
-      <header className="py-12 md:py-24 px-6 max-w-7xl mx-auto">
+      <header className="py-6 md:py-24 px-6 max-w-7xl mx-auto">
         <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-12'>
           <div className="text-center md:text-left flex-1">
             <span className="inline-block px-4 py-1 rounded-full text-sm font-bold mb-4 bg-slate-100" style={{ color: brandColor }}>
@@ -30,15 +51,17 @@ const Home: React.FC = () => {
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-               <button 
+               <a href="/Myprojects">
+                <button 
                 className="px-8 py-4 rounded-full text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform"
                 style={{ backgroundColor: brandColor }}
                >
                  View My Work
                </button>
-               <button className="px-8 py-4 rounded-full border-2 border-slate-200 font-bold text-lg hover:bg-slate-50 transition-colors">
+               </a>
+               <a href="mailto:dasilvadevon51@gmail.com"><button className="px-8 py-4 rounded-full border-2 border-slate-200 font-bold text-lg hover:bg-slate-50 transition-colors">
                  Let's Talk
-               </button>
+               </button></a>
             </div>
           </div>
 
@@ -82,28 +105,14 @@ const Home: React.FC = () => {
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
-      {[
-        { 
-          title: "Brand Identity", 
-          desc: "Crafting distinct visual narratives that define your essence and command attention in crowded markets.",
-          tags: ["Logos", "Guidelines", "Stationery"]
-        },
-        { 
-          title: "UI/UX Design", 
-          desc: "Developing seamless digital interfaces that balance aesthetic elegance with intuitive user functionality.",
-          tags: ["Mobile", "Web", "Prototypes"]
-        },
-        { 
-          title: "Motion Design", 
-          desc: "Injecting life into static brands through high-end motion graphics and interactive story-telling.",
-          tags: ["Animation", "3D", "Reels"]
-        }
-      ].map((service, i) => (
+      {visual.map((service, i) => (
+        <a href={service.link}>
         <div 
-          key={i} 
+          key={service.id} 
           className="group relative p-8 md:p-10 bg-slate-50 rounded-[2.5rem] border border-transparent hover:border-slate-200 hover:bg-white hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500 flex flex-col h-full"
         >
           {/* Index stylisé */}
+        
           <span className="text-5xl font-black opacity-[0.05] absolute top-8 right-8 group-hover:opacity-10 transition-opacity">
             0{i + 1}
           </span>
@@ -114,7 +123,7 @@ const Home: React.FC = () => {
             style={{ backgroundColor: brandColor }}
           ></div>
 
-          <h4 className="text-2xl font-black mb-4 tracking-tight group-hover:translate-x-1 transition-transform">
+          <h4 className={`text-2xl font-black mb-4 tracking-tight group-hover:translate-x-1 transition-transform ${service.title === "Brand Identity" ? "text-slate-900" : service.title === "UI/UX Design" ? "text-slate-800" : "text-slate-700"}`}>
             {service.title}
           </h4>
 
@@ -132,149 +141,24 @@ const Home: React.FC = () => {
           </div>
 
           {/* Icône de flèche subtile au survol */}
-          <div className="absolute bottom-10 right-10 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+          <a className="absolute bottom-10 right-10 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0" href={service.link}>
              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ stroke: brandColor }} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
              </svg>
-          </div>
+          </a>
+       
         </div>
+        </a>
       ))}
     </div>
   </div>
 </section>
 
       {/* --- PROJECTS GALLERY SECTION --- */}
+      
 
-
-    const brandColor = "#8DC63F";
-
-    <main className="max-w-[95%] mx-auto my-12 md:my-24 bg-[#D8D8D8] rounded-[2rem] md:rounded-[4rem] overflow-hidden border border-white/20 shadow-2xl relative">
-        
-        {/* --- EFFETS DE TEXTURE & PROFONDEUR --- */}
-        {/* Grand texte DC en arrière-plan avec un mode de fusion pour se fondre dans le gris */}
-        <div className="absolute top-0 right-0 p-10 mix-blend-overlay opacity-20 pointer-events-none">
-            <span className="text-[18rem] font-black leading-none select-none tracking-tighter">DC</span>
-        </div>
-
-        {/* Cercle de lumière blanche pour donner du relief au gris */}
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-white/30 blur-[120px] rounded-full"></div>
-
-        <div className="px-6 md:px-16 pt-16 md:pt-28 pb-16 relative z-10">
-            
-            {/* --- HEADER SECTION --- */}
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 md:mb-32 gap-8">
-                <div className="relative">
-                    {/* Badge vertical : on utilise un blanc pur pour trancher avec le gris */}
-                    <div 
-                        className="absolute -left-6 md:-left-10 top-2 h-full w-[4px] rounded-full shadow-[0_0_15px_rgba(141,198,63,0.5)]"
-                        style={{ backgroundColor: brandColor }}
-                    ></div>
-                    
-                    <h3 className="text-6xl md:text-9xl font-black text-slate-900 tracking-tighter leading-[0.8]">
-                        Selected <br />
-                        <span className="text-white drop-shadow-sm">Works.</span>
-                    </h3>
-                    
-                    <div className="flex items-center gap-4 mt-10">
-                        <p className="text-slate-600 text-lg font-bold max-w-sm leading-tight uppercase tracking-tighter">
-                            Visual research <br /> & Digital craft
-                        </p>
-                        <div className="h-[2px] w-12 bg-slate-900"></div>
-                    </div>
-                </div>
-        </div>
-
-                {/* --- COMPTEUR STYLE "STUDIO" --- */}
-                <div className="flex flex-col items-start md:items-end">
-  {/* Le conteneur principal avec effet Glassmorphism renforcé */}
-    <div className="group relative">
-        
-        {/* Petit reflet lumineux qui suit le survol (optionnel via CSS) */}
-        <div className="absolute -inset-0.5 bg-gradient-to-br from-white/40 to-transparent opacity-0 group-hover:opacity-100 rounded-[2rem] transition-opacity duration-500 blur-sm"></div>
-
-        <div className="relative bg-white/30 backdrop-blur-xl border border-white/60 p-6 md:p-8 rounded-[2rem] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] flex items-center gap-8 transition-all duration-500 group-hover:translate-y-[-5px] group-hover:bg-white/50">
-        
-        {/* Colonne d'infos textuelles */}
-        <div className="flex flex-col gap-1">
-            <div className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: brandColor }}></span>
-                <span className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">Portfolio Edition</span>
-            </div>
-            <span className="text-slate-900 font-black text-xl tracking-tighter">
-                2026<span className="text-slate-400">/</span>DC
-            </span>
-        </div>
-
-        {/* Séparateur stylisé avec un dégradé */}
-        <div className="w-[1.5px] h-12 bg-gradient-to-b from-transparent via-slate-400/40 to-transparent"></div>
-
-        {/* Le Compteur avec un effet de profondeur */}
-        <div className="relative">
-            {/* Un chiffre fantôme en arrière-plan pour le style */}
-            <span className="absolute -inset-1 opacity-10 blur-md font-black text-6xl select-none" style={{ color: brandColor }}>
-                {myProjects.length < 10 ? `0${myProjects.length}` : myProjects.length}
-            </span>
-            
-            <span 
-                className="relative text-6xl font-black tabular-nums leading-none tracking-tighter transition-transform duration-500 group-hover:scale-110 block" 
-                style={{ color: brandColor }}
-            >
-                {myProjects.length < 10 ? `0${myProjects.length}` : myProjects.length}
-            </span>
-        </div>
-        </div>
-
-        {/* Petit label flottant sous le bloc pour ajouter du contenu "pro" */}
-        <div className="mt-4 flex items-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0 mr-4">
-            <span className="text-[9px] font-bold uppercase tracking-widest text-slate-500">Last update: Feb 2026</span>
-            <div className="w-1 h-1 bg-slate-300 rounded-full"></div>
-            <span className="text-[9px] font-bold uppercase tracking-widest text-slate-500 italic">Washington DC Studio</span>
-        </div>
-    </div>
-    </div>
-
-                {/* --- GALERIE --- */}
-                <div className="relative group">
-                    {/* On remplace le halo vert par un halo blanc pour faire briller les images sur le gris */}
-                    <div className="absolute inset-0 bg-white/20 blur-[150px] rounded-full pointer-events-none transform scale-75 group-hover:scale-100 transition-transform duration-1000"></div>
-
-                    <div className="relative z-10 flex justify-center drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
-                        <Gallery projects={myProjects} />
-                    </div>
-                </div>
-
-                {/* --- FOOTER : NAVIGATION ARCHIVE --- */}
-                <div className="mt-24 md:mt-32 flex flex-col md:flex-row items-center justify-between gap-10">
-                    <div className="flex flex-col">
-                        <span className="text-slate-500 text-[10px] font-black uppercase tracking-[0.4em] mb-2 text-center md:text-left">Based in</span>
-                        <div className="flex items-center gap-3">
-                            <div className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: brandColor }}></div>
-                            <span className="text-slate-900 font-black tracking-tight text-xl uppercase">Washington DC</span>
-                        </div>
-                    </div>
-
-                    <a 
-                        href="/Myprojects" 
-                        className="group relative flex items-center gap-8 bg-slate-900 hover:bg-black px-10 py-5 rounded-full transition-all duration-500 hover:scale-105 active:scale-95 shadow-2xl shadow-black/20"
-                    >
-                        <span className="text-white text-sm font-black uppercase tracking-[0.2em]">View full archive</span>
-                        <div className="flex items-center justify-center w-10 h-10 bg-white rounded-full transition-transform duration-500 group-hover:rotate-[360deg]">
-                            <svg 
-                                width="18" height="18" 
-                                viewBox="0 0 24 24" 
-                                fill="none" 
-                                stroke="black" 
-                                strokeWidth="3" 
-                                className="group-hover:translate-x-0.5 transition-transform"
-                            >
-                                <path d="M5 12h14m-7-7 7 7-7 7" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </main>
+    
 
         {/* --- RECENT POSTS / READ SECTION --- */}
         {/* Tu peux décommenter si ton composant Read est prêt */}

@@ -6,23 +6,11 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Fade from '@mui/material/Fade';
 import Backdrop from '@mui/material/Backdrop';
+import { itemData } from '../data/poster';
 
 import '../index.css';
 import Nav from '../components/Nav';
 
-// Tes imports d'images
-import S1 from '../assets/img/S1.jpg';
-import S2 from '../assets/img/S2.jpg';
-import S3 from '../assets/img/S3.jpg';
-import S4 from '../assets/img/S4.jpg';
-import S5 from '../assets/img/S5.jpg';
-import S6 from '../assets/img/S6.jpg';
-import S7 from '../assets/img/S7.jpg';
-import S8 from '../assets/img/S8.jpg';
-import S9 from '../assets/img/S9.jpg';
-import S10 from '../assets/img/S10.jpg';
-import S11 from '../assets/img/S11.png';
-import S12 from '../assets/img/S12.png';
 
 export default function Myproject() {
   const [open, setOpen] = useState(false);
@@ -183,22 +171,3 @@ export default function Myproject() {
   );
 }
 
-const itemData = [
-  { img: S1, title: 'Visual Identity' },
-  { img: S2, title: 'Brand Poster' },
-  { img: S3, title: 'Concept Art' },
-  { img: S4, title: 'Digital Design' },
-  { img: S5, title: 'Event Media' },
-  { img: S6, title: 'UX Research' },
-  { img: S7, title: 'Graphic System' },
-  { img: S8, title: 'Social Media' },
-  { img: S9, title: 'Photography' },
-  { img: S10, title: 'Modern UI' },
-  { img: S11, title: 'Mobile App' },
-  { img: S12, title: 'Web Experience' },
-  { img: 'https://images.unsplash.com/photo-1627000086207-76eabf23aa2e', title: 'Road Trip Branding' },
-  { img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8', title: 'Street Fashion' },
-  { img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af', title: 'Food Styling' },
-  { img: 'https://images.unsplash.com/photo-1627328561499-a3584d4ee4f7', title: 'Nature Photography' },
-  { img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6', title: 'Urban Motion' },
-];
