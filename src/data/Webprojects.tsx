@@ -1,6 +1,6 @@
 
 import Img1 from '../assets/img/Web/w1.png';
-import Img2 from '../assets/img/web/w2.png';
+import Img2 from '../assets/img/Web/w2.png';
 import Img3 from '../assets/img/Web/W3.png';
 
 
