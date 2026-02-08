@@ -10,6 +10,7 @@ import S10 from '../assets/img/S10.jpg';
 import S11 from '../assets/img/S11.png';
 import S14 from '../assets/img/S14.jpg';
 import S15 from '../assets/img/S15.jpeg';
+import S16 from '../assets/img/card.jpg';
 
 
 
@@ -21,7 +22,9 @@ interface PosterItem {
 }
 
 export const itemData: PosterItem[] = [
+  
   { img: S15, title: 'Visual Identity' },
+  { img: S16, title: 'Card Design' },
   { img: S2, title: 'Brand Poster' },
   { img: S3, title: 'Concept Art' },
   { img: S4, title: 'Digital Design' },

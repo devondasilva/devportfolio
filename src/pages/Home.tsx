@@ -109,7 +109,7 @@ const Home: React.FC = () => {
         <a href={service.link}>
         <div 
           key={service.id} 
-          className="group relative p-8 md:p-10 bg-slate-50 rounded-[2.5rem] border border-transparent hover:border-slate-200 hover:bg-white hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500 flex flex-col h-full"
+          className="group relative p-8 md:p-10 bg-slate-200 rounded-[2.5rem] border border-transparent hover:border-slate-200 hover:bg-white hover:shadow-2xl hover:shadow-slate-200/50 transition-all duration-500 flex flex-col h-full"
         >
           {/* Index stylisé */}
         

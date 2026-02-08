@@ -1,19 +1,23 @@
-import l1 from '../assets/img/livre/livre-19.jpg';
-import l2 from '../assets/img/livre/Livre-01.jpg';
-import l3 from '../assets/img/livre/Livre-02.jpg';
-import l4 from '../assets/img/livre/Livre-03.jpg';
-import l5 from '../assets/img/livre/Livre-04.jpg';
-import l6 from '../assets/img/livre/Livre-05.jpg';
-import l7 from '../assets/img/livre/Livre-06.jpg';
-import l8 from '../assets/img/livre/Livre-07.jpg';
-import l9 from '../assets/img/livre/Livre-08.jpg';
-import l10 from '../assets/img/livre/Livre-09.jpg';
-import l11 from '../assets/img/livre/Livre-10.jpg';
-import l12 from '../assets/img/livre/Livre-11.jpg';
-import l13 from '../assets/img/livre/Livre-12.jpg';
-import l14 from '../assets/img/livre/livre-13.jpg';
-import l15 from '../assets/img/livre/Livre-14.jpg';
-import l16 from '../assets/img/livre/Livre-15.jpg';
+import l1 from '../assets/img/livre/L1.jpeg';
+import l2 from '../assets/img/livre/L2.jpg';
+import l3 from '../assets/img/livre/L3.jpeg';
+import l4 from '../assets/img/livre/L4.jpeg';
+import l5 from '../assets/img/livre/L5.jpeg';
+import l6 from '../assets/img/livre/L6.jpeg';    
+import l7 from '../assets/img/livre/L7.jpeg';
+import l8 from '../assets/img/livre/L8.jpeg';
+import l9 from '../assets/img/livre/L9.jpeg';
+import l10 from '../assets/img/livre/L10.jpeg';
+import l11 from '../assets/img/livre/L11.jpeg';
+import l12 from '../assets/img/livre/L12.jpeg';
+import l13 from '../assets/img/livre/L13.jpeg';
+import l14 from '../assets/img/livre/L14.jpeg';
+import l15 from '../assets/img/livre/L15.jpeg';
+import l16 from '../assets/img/livre/L16.jpeg';
+import l17 from '../assets/img/livre/L17.jpeg';
+import l18 from '../assets/img/livre/L18.jpeg';
+import l19 from '../assets/img/livre/L2.jpg';
+import l20 from '../assets/img/livre/L20.jpeg';
 
 
 
@@ -40,5 +44,10 @@ export const livrePages: LivrePage[] = [
   { id: 13, image: l13, title: "Page 13" },
   { id: 14, image: l14, title: "Page 14" },
   { id: 15, image: l15, title: "Page 15" },
-  { id: 16, image:l16 , title:"Page 16"}
+  { id: 16, image:l16 , title:"Page 16"},
+    { id: 17, image:l17 , title:"Page 17"},
+    { id: 18, image:l18 , title:"Page 18"},
+    { id: 19, image:l19 , title:"Page 19"},
+    { id: 20, image:l20 , title:"Quatrième de couverture"},
+  
 ];

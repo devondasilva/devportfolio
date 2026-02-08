@@ -36,7 +36,7 @@ const About: React.FC = () => {
                             </h1>
                             <p className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed">
                                 I build scalable web applications with a focus on user experience and clean architecture. 
-                                Currently based in Takoma Park, MD, ready to turn complex problems into elegant solutions.
+                                Currently based in Maryland, ready to turn complex problems into elegant solutions.
                             </p>
                         </div>
                     </div>
