@@ -72,7 +72,7 @@ const LogoShow: React.FC = () => {
           </div>
           <div>
             <h4 className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Based in</h4>
-            <p className="text-sm font-black text-slate-900 uppercase tracking-tighter">Cayenne / Kourou, French Guiana</p>
+            <p className="text-sm font-black text-slate-900 uppercase tracking-tighter">Maryland</p>
           </div>
         </div>
       </footer>

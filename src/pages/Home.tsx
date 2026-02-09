@@ -319,10 +319,10 @@ const Home: React.FC = () => {
           <p className="text-gray-400 text-sm">
             © 2026 — Design Portfolio. Developed by <span className="font-bold text-slate-800">D@scommunication</span>.
           </p>
-          <div className="flex gap-6 text-sm font-bold uppercase tracking-widest">
-             <a href="#" className="hover:opacity-70 transition-opacity">Instagram</a>
-             <a href="#" className="hover:opacity-70 transition-opacity">LinkedIn</a>
-             <a href="#" className="hover:opacity-70 transition-opacity">Dribbble</a>
+          <div className="flex gap-6 text-sm font-bold uppercase tracking-widest text-gray-400">
+             <a href="https://www.instagram.com/devondasilva5?igsh=MWNsd2FucjE2ZnJzbg%3D%3D&utm_source=qr" className="hover:opacity-70 transition-opacity">Instagram</a>
+             <a href="https://www.linkedin.com/in/honore-da-silva-b02561194" className="hover:opacity-70 transition-opacity">LinkedIn</a>
+             <a href="https://www.facebook.com/devon.dasilva.37" className="hover:opacity-70 transition-opacity">Facebook</a>
           </div>
         </div>
       </footer>

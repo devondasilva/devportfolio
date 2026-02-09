@@ -16,6 +16,7 @@ import S18 from '../assets/img/S18.jpeg';
 import S19 from '../assets/img/S19.jpeg';
 import S20 from '../assets/img/S20.jpeg';
 import S21 from '../assets/img/S21.jpeg';
+import S22 from '../assets/img/S22.jpg';
 
 
 
@@ -47,4 +48,5 @@ export const itemData: PosterItem[] = [
     { img: S19, title: 'Color Theory' },
     { img: S20, title: 'Layout Design' },
     { img: S21, title: 'Creative Direction' },
+    { img: S22, title: 'Brand Strategy' },
 ];
