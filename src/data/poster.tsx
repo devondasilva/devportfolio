@@ -11,6 +11,12 @@ import S11 from '../assets/img/S11.png';
 import S14 from '../assets/img/S14.jpg';
 import S15 from '../assets/img/S15.jpeg';
 import S16 from '../assets/img/card.jpg';
+import S17 from '../assets/img/S17.jpeg';
+import S18 from '../assets/img/S18.jpeg';
+import S19 from '../assets/img/S19.jpeg';
+import S20 from '../assets/img/S20.jpeg';
+import S21 from '../assets/img/S21.jpeg';
+
 
 
 
@@ -25,15 +31,20 @@ export const itemData: PosterItem[] = [
   
   { img: S15, title: 'Visual Identity' },
   { img: S16, title: 'Card Design' },
-  { img: S2, title: 'Brand Poster' },
-  { img: S3, title: 'Concept Art' },
+  { img: S18, title: 'Brand Poster' },
+  { img: S7, title: 'Concept Art' },
   { img: S4, title: 'Digital Design' },
   { img: S5, title: 'Event Media' },
   { img: S6, title: 'UX Research' },
-  { img: S7, title: 'Graphic System' },
+  { img: S3, title: 'Graphic System' },
   { img: S8, title: 'Social Media' },
   { img: S9, title: 'Photography' },
   { img: S10, title: 'Modern UI' },
   { img: S11, title: 'Mobile App' },
-  { img: S14, title: 'Product Design' }
+  { img: S14, title: 'Product Design' },
+    { img: S17, title: 'Illustration' },
+    { img: S2, title: 'Typography' },
+    { img: S19, title: 'Color Theory' },
+    { img: S20, title: 'Layout Design' },
+    { img: S21, title: 'Creative Direction' },
 ];
