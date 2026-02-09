@@ -11,6 +11,7 @@ import S11 from '../assets/img/S11.png';
 import S14 from '../assets/img/S14.jpg';
 import S15 from '../assets/img/S15.jpeg';
 import S16 from '../assets/img/card.jpg';
+import S23 from '../assets/img/S16.jpg';
 import S17 from '../assets/img/S17.jpeg';
 import S18 from '../assets/img/S18.jpeg';
 import S19 from '../assets/img/S19.jpeg';
@@ -35,7 +36,7 @@ export const itemData: PosterItem[] = [
   { img: S18, title: 'Brand Poster' },
   { img: S7, title: 'Concept Art' },
   { img: S4, title: 'Digital Design' },
-  { img: S5, title: 'Event Media' },
+  { img: S23, title: 'Event Media' },
   { img: S6, title: 'UX Research' },
   { img: S3, title: 'Graphic System' },
   { img: S8, title: 'Social Media' },
@@ -49,4 +50,5 @@ export const itemData: PosterItem[] = [
     { img: S20, title: 'Layout Design' },
     { img: S21, title: 'Creative Direction' },
     { img: S22, title: 'Brand Strategy' },
+    { img: S5, title: 'Packaging Design' },
 ];
