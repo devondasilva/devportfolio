@@ -290,15 +290,17 @@ const About: React.FC = () => {
             </main>
 
             {/* --- CONTACT FOOTER --- */}
-            <footer className="py-24 bg-slate-50 border-t border-slate-100 text-center">
-                <h2 className="text-2xl font-bold mb-8">Want to collaborate?</h2>
-                <a 
-                    href="mailto:contact@yourdomain.com" 
-                    className="inline-block px-10 py-4 text-white font-bold rounded-full transition-all shadow-lg hover:brightness-110"
-                    style={{ backgroundColor: brandColor }}
-                >
-                    Get In Touch
-                </a>
+             <footer className="bg-white py-12 px-6 border-t border-slate-100">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                <p className="text-gray-400 text-sm">
+                    © 2026 — Design Portfolio. Developed by <span className="font-bold text-slate-800">D@scommunication</span>.
+                </p>
+                <div className="flex gap-6 text-sm font-bold uppercase tracking-widest text-gray-400">
+                    <a href="https://www.instagram.com/devondasilva5?igsh=MWNsd2FucjE2ZnJzbg%3D%3D&utm_source=qr" className="hover:opacity-70 transition-opacity">Instagram</a>
+                    <a href="https://www.linkedin.com/in/honore-da-silva-b02561194" className="hover:opacity-70 transition-opacity">LinkedIn</a>
+                    <a href="https://www.facebook.com/devon.dasilva.37" className="hover:opacity-70 transition-opacity">Facebook</a>
+                </div>
+                </div>
             </footer>
         </div>
     );

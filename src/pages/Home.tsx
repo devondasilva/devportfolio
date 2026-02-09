@@ -296,7 +296,7 @@ const Home: React.FC = () => {
         <div className="hidden md:block w-[1px] h-4 bg-white/10"></div>
 
         <span className="text-gray-400 text-sm font-medium tracking-wide">
-          Based in <span className="text-white font-bold tracking-normal">Washington, DC</span> — 
+          Based in <span className="text-white font-bold tracking-normal">Maryland</span> — 
           <span className="ml-2 text-white tabular-nums">
             {new Date().toLocaleTimeString('en-US', {
               timeZone: 'America/New_York',
@@ -315,7 +315,6 @@ const Home: React.FC = () => {
       {/* --- FOOTER --- */}
       <footer className="bg-white py-12 px-6 border-t border-slate-100">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-2xl font-black italic">DEVON<span style={{ color: brandColor }}>.</span></div>
           <p className="text-gray-400 text-sm">
             © 2026 — Design Portfolio. Developed by <span className="font-bold text-slate-800">D@scommunication</span>.
           </p>

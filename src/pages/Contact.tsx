@@ -101,8 +101,17 @@ const Contact: React.FC = () => {
                 </div>
             </main>
 
-            <footer className="py-12 border-t border-slate-100 text-center">
-                 <p className="text-slate-400 text-sm italic">© 2026 — D@scommunication</p>
+             <footer className="bg-white py-12 px-6 border-t border-slate-100">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+                <p className="text-gray-400 text-sm">
+                    © 2026 — Design Portfolio. Developed by <span className="font-bold text-slate-800">D@scommunication</span>.
+                </p>
+                <div className="flex gap-6 text-sm font-bold uppercase tracking-widest text-gray-400">
+                    <a href="https://www.instagram.com/devondasilva5?igsh=MWNsd2FucjE2ZnJzbg%3D%3D&utm_source=qr" className="hover:opacity-70 transition-opacity">Instagram</a>
+                    <a href="https://www.linkedin.com/in/honore-da-silva-b02561194" className="hover:opacity-70 transition-opacity">LinkedIn</a>
+                    <a href="https://www.facebook.com/devon.dasilva.37" className="hover:opacity-70 transition-opacity">Facebook</a>
+                </div>
+                </div>
             </footer>
         </div>
     );
