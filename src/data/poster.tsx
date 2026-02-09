@@ -11,7 +11,7 @@ import S11 from '../assets/img/S11.png';
 import S14 from '../assets/img/S14.jpg';
 import S15 from '../assets/img/S15.jpeg';
 import S16 from '../assets/img/card.jpg';
-import S23 from '../assets/img/S16.jpg';
+import S23 from '../assets/img/S16.jpeg';
 import S17 from '../assets/img/S17.jpeg';
 import S18 from '../assets/img/S18.jpeg';
 import S19 from '../assets/img/S19.jpeg';
