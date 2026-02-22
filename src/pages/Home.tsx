@@ -32,7 +32,6 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-[#8DC63F] selection:text-white">
       <Nav />
-
       {/* --- HERO SECTION --- */}
       <header className="py-6 md:py-24 px-6 max-w-7xl mx-auto">
         <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-12'>

@@ -18,7 +18,7 @@ import S19 from '../assets/img/S19.jpeg';
 import S20 from '../assets/img/S20.jpeg';
 import S21 from '../assets/img/S21.jpeg';
 import S22 from '../assets/img/S22.jpg';
-
+import S24 from '../assets/img/S23.png'
 
 
 
@@ -31,6 +31,7 @@ interface PosterItem {
 
 export const itemData: PosterItem[] = [
   
+  { img: S24, title: 'Flyer' },
   { img: S15, title: 'Visual Identity' },
   { img: S16, title: 'Card Design' },
   { img: S18, title: 'Brand Poster' },
