@@ -31,7 +31,7 @@ interface PosterItem {
 
 export const itemData: PosterItem[] = [
   
-  { img: S24, title: 'Flyer' },
+
   { img: S15, title: 'Visual Identity' },
   { img: S16, title: 'Card Design' },
   { img: S18, title: 'Brand Poster' },
@@ -42,6 +42,7 @@ export const itemData: PosterItem[] = [
   { img: S3, title: 'Graphic System' },
   { img: S8, title: 'Social Media' },
   { img: S9, title: 'Photography' },
+    { img: S24, title: 'Flyer' },
   { img: S10, title: 'Modern UI' },
   { img: S11, title: 'Mobile App' },
   { img: S14, title: 'Product Design' },

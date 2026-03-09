@@ -12,7 +12,7 @@ import '../index.css';
 import Nav from '../components/Nav';
 
 
-export default function Myproject() {
+export default function Myportofolio() {
   const [open, setOpen] = useState(false);
   const [activeImg, setActiveImg] = useState<{img: string, title: string} | null>(null);
   const brandColor = "#8DC63F";

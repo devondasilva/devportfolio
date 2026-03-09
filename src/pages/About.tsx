@@ -113,127 +113,123 @@ const About: React.FC = () => {
                             <span className="text-xs font-black text-slate-400 uppercase tracking-widest">2021 — Present</span>
                             
                             <div className="flex flex-col mb-2">
-                                <h3 className="text-2xl font-black text-slate-900 tracking-tighter uppercase">Full Stack Developer & UI/UX Designer</h3>
-                                <p className="font-bold italic text-sm" style={{ color: brandColor }}>MADES Sports Organization (Remote Collaboration)</p>
+                                <h3 className="text-2xl font-black text-slate-900 tracking-tighter uppercase">Digital Systems Architect & UI/UX Strategist</h3>
+                                <p className="font-bold italic text-sm" style={{ color: brandColor }}>MADES Sports Organization (International Governance)</p>
                             </div>
 
                             <p className="mt-4 text-slate-600 leading-relaxed">
-                                Designed and developed the complete website <span className="text-slate-900 font-bold">https://mades-sport-sandy.vercel.app </span>. 
-                               using full stack technologies
+                                Engineered and managed a comprehensive <span className="text-slate-900 font-bold">digital infrastructure</span> using modern full-stack architectures to streamline cross-border operations and data management.
                             </p>
                             
                             <ul className="mt-6 space-y-3">
                                 <li className="flex items-center gap-3 text-xs font-bold text-slate-500 uppercase tracking-tight">
                                     <div className="w-1.5 h-1.5 rounded-full bg-slate-300"></div>
-                                    Created and implemented UI/UX design via Figma, ensuring an intuitive and engaging user experience.
+                                    Conceptualized and deployed high-performance digital interfaces focused on accessibility and institutional branding.
                                 </li>
                                 <li className="flex items-center gap-3 text-xs font-bold text-slate-500 uppercase tracking-tight">
                                     <div className="w-1.5 h-1.5 rounded-full bg-slate-300"></div>
-                                    Managed and optimized the organization's online presence, including technical and visual aspects.
+                                    Orchestrated the organization's digital ecosystem, balancing technical scalability with visual consistency.
                                 </li>
                             </ul>
                         </div>
 
                         {/* EXPÉRIENCE 2 : FOCUS DESIGN & BRANDING */}
                         <div className="relative pl-8 group">
-                        {/* Indicateur visuel stylé */}
-                        <div 
-                            className="absolute w-4 h-4 rounded-full -left-[9px] top-1.5 ring-4 ring-white transition-all group-hover:scale-125"
-                            style={{ backgroundColor: brandColor }}
-                        ></div>
-                    
+                            <div 
+                                className="absolute w-4 h-4 rounded-full -left-[9px] top-1.5 ring-4 ring-white transition-all group-hover:scale-125"
+                                style={{ backgroundColor: brandColor }}
+                            ></div>
+
                             <span className="text-xs font-black text-slate-400 uppercase tracking-widest">2023 — Present</span>
                             
                             <div className="flex flex-col mb-4">
                                 <h3 className="text-3xl font-black text-slate-900 tracking-tighter uppercase leading-none">
-                            DAS COMMUNICATION
-                        </h3>
-                        <div className="flex items-center gap-2 mt-2">
-                            <p className="font-bold italic text-sm" style={{ color: brandColor }}>Founder & Creative Director</p>
-                            <span className="text-[10px] bg-slate-100 px-2 py-0.5 rounded font-black uppercase tracking-tighter">Self-Founded</span>
+                                    DAS COMMUNICATION
+                                </h3>
+                                <div className="flex items-center gap-2 mt-2">
+                                    <p className="font-bold italic text-sm" style={{ color: brandColor }}>Principal Consultant & Digital Strategist</p>
+                                    <span className="text-[10px] bg-slate-100 px-2 py-0.5 rounded font-black uppercase tracking-tighter">Strategic Leadership</span>
+                                </div>
+                            </div>
+
+                            <p className="mt-4 text-slate-600 leading-relaxed font-medium">
+                                Founded and directed a consultancy specializing in <span className="text-slate-900 font-bold underline decoration-slate-200 underline-offset-4">comprehensive digital modernization</span>. 
+                                I lead cross-functional projects to align business architectures with modern digital ecosystems, ensuring high-impact growth and secure online operations.
+                            </p>
+
+                            <ul className="mt-6 space-y-4">
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: brandColor }}></div>
+                                    <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
+                                        <span className="text-slate-900">Institutional Branding:</span> Engineered 360° visual identities and professional editorial assets to standardize communication for high-profile clients.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: brandColor }}></div>
+                                    <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
+                                        <span className="text-slate-900">Transformation Management:</span> Orchestrated digital transitions through technical SEO optimization, data-driven social curation, and platform scalability.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: brandColor }}></div>
+                                    <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
+                                        <span className="text-slate-900">System Design:</span> Bridged the gap between complex organizational workflows and intuitive digital interfaces using Figma and Agile methodologies.
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
 
-                    <p className="mt-4 text-slate-600 leading-relaxed font-medium">
-                        Founded and managed a multi-disciplinary creative agency specializing in <span className="text-slate-900 font-bold underline decoration-slate-200 underline-offset-4">high-end visual communication</span>. 
-                        I led the artistic direction for diverse clients, transforming business objectives into impactful brand ecosystems and digital growth strategies.
-                    </p>
+                        <div className="relative pl-8 group">
+                            <div 
+                                className="absolute w-4 h-4 rounded-full -left-[9px] top-1.5 ring-4 ring-white transition-all group-hover:scale-125 bg-slate-200 group-hover:bg-[#8DC63F] opacity-80 group-hover:opacity-100"
+                            ></div>
+                            
+                            <span className="text-xs font-black text-slate-400 uppercase tracking-widest">Jan 2021 — June 2022</span>
+                            
+                            <div className="flex flex-col mb-4">
+                                <h3 className="text-3xl font-black text-slate-900 tracking-tighter uppercase leading-none">
+                                    CORIS BANK INTERNATIONAL
+                                </h3>
+                                <div className="flex items-center gap-2 mt-2">
+                                    <p className="font-bold italic text-sm text-slate-500">Digital Systems & Security Engineering Intern</p>
+                                    <span className="text-[10px] border border-slate-200 px-2 py-0.5 rounded font-black uppercase tracking-tighter">Banking Technology</span>
+                                </div>
+                            </div>
 
-                    <ul className="mt-6 space-y-4">
-                        <li className="flex items-start gap-3">
-                            <div className="mt-1.5 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: brandColor }}></div>
-                            <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
-                                <span className="text-slate-900">Brand Engineering:</span> Designed 360° communication assets, including iconic logos, corporate stationery, and professional editorial layouts.
+                            <p className="mt-4 text-slate-600 leading-relaxed font-medium">
+                                Spearheaded the digital modernization of internal banking workflows by integrating <span className="text-slate-900 font-bold">Secure Mobile Architectures</span> and high-performance <span className="text-slate-900 font-bold">Enterprise Solutions</span>. I focused on enhancing operational efficiency through the development of mission-critical notification systems.
                             </p>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <div className="mt-1.5 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: brandColor }}></div>
-                            <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
-                                <span className="text-slate-900">Digital Management:</span> Orchestrated online presence for brands through strategic social media curation and technical web optimization.
-                            </p>
-                        </li>
-                        <li className="flex items-start gap-3">
-                            <div className="mt-1.5 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: brandColor }}></div>
-                            <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
-                                <span className="text-slate-900">Product Design:</span> Led UI/UX workflows in Figma to bridge the gap between aesthetic branding and functional user interfaces.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
 
-                    <div className="relative pl-8 group">
-                {/* Indicateur visuel (moins brillant que Briatek car c'est une expérience passée) */}
-                <div 
-                    className="absolute w-4 h-4 rounded-full -left-[9px] top-1.5 ring-4 ring-white transition-all group-hover:scale-125 bg-slate-200 group-hover:bg-[#8DC63F] opacity-80 group-hover:opacity-100"
-                ></div>
-                
-                <span className="text-xs font-black text-slate-400 uppercase tracking-widest">Jan 2021 — June 2022</span>
-                
-                <div className="flex flex-col mb-4">
-                    <h3 className="text-3xl font-black text-slate-900 tracking-tighter uppercase leading-none">
-                        CORIS BANK INTERNATIONAL
-                    </h3>
-                    <div className="flex items-center gap-2 mt-2">
-                        <p className="font-bold italic text-sm text-slate-500">IT Maintenance & Software Engineering Intern</p>
-                        <span className="text-[10px] border border-slate-200 px-2 py-0.5 rounded font-black uppercase tracking-tighter">Banking Tech</span>
-                    </div>
-                </div>
+                            <ul className="mt-6 space-y-4">
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8DC63F] transition-colors"></div>
+                                    <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
+                                        <span className="text-slate-900">Systems Optimization:</span> Designed and architected the UI/UX for internal fintech applications, prioritizing security-first principles and user-centered efficiency.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8DC63F] transition-colors"></div>
+                                    <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
+                                        <span className="text-slate-900">Secure Engineering:</span> Developed robust cross-platform mobile solutions using <span className="italic">Flutter</span>, adhering to stringent financial sector encryption and data protection standards.
+                                    </p>
+                                </li>
+                                <li className="flex items-start gap-3">
+                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8DC63F] transition-colors"></div>
+                                    <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
+                                        <span className="text-slate-900">Infrastructure Lifecycle:</span> Managed the end-to-end SDLC, bridging the gap between hardware maintenance and software engineering to ensure 24/7 technical continuity.
+                                    </p>
+                                </li>
+                            </ul>
 
-                <p className="mt-4 text-slate-600 leading-relaxed font-medium">
-                    Supported the digital transformation of a leading banking institution by bridging <span className="text-slate-900 font-bold">UI/UX Design</span> and <span className="text-slate-900 font-bold">Mobile Development</span>. 
-                    I focused on creating intuitive notification systems and cross-platform mobile solutions to enhance internal operational efficiency.
-                </p>
-
-                <ul className="mt-6 space-y-4">
-                    <li className="flex items-start gap-3">
-                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8DC63F] transition-colors"></div>
-                        <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
-                            <span className="text-slate-900">Interface Architecture:</span> Conceptualized and designed the UI/UX for the internal notification application, focusing on user-centered principles to improve banking workflow efficiency.
-                        </p>
-                    </li>
-                    <li className="flex items-start gap-3">
-                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8DC63F] transition-colors"></div>
-                        <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
-                            <span className="text-slate-900">Mobile Engineering:</span> Engineered high-performance mobile applications using <span className="italic">Flutter</span>, ensuring seamless cross-platform compatibility and rigorous security standards.
-                        </p>
-                    </li>
-                    <li className="flex items-start gap-3">
-                        <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-slate-300 group-hover:bg-[#8DC63F] transition-colors"></div>
-                        <p className="text-xs font-bold text-slate-500 uppercase tracking-tight leading-normal">
-                            <span className="text-slate-900">Full Cycle Collaboration:</span> Participated in the complete SDLC, from initial wireframing in Figma to final implementation and technical maintenance of IT infrastructures.
-                        </p>
-                    </li>
-                </ul>
-
-                {/* Stack technique utilisée chez Coris */}
-                <div className="mt-6 flex gap-3 opacity-60 group-hover:opacity-100 transition-opacity">
-                    {['Flutter', 'Dart', 'Figma', 'UI/UX', 'IT Networking'].map((tech) => (
-                        <span key={tech} className="text-[9px] font-black text-slate-400 border border-slate-200 px-2 py-1 rounded">
-                            {tech}
-                        </span>
-                    ))}
-                </div>
-            </div>
+                            {/* Updated tech tags for the Embassy role */}
+                            <div className="mt-6 flex gap-3 opacity-60 group-hover:opacity-100 transition-opacity">
+                                {['Enterprise Architecture', 'Cybersecurity', 'Figma', 'Fintech', 'Agile'].map((tech) => (
+                                    <span key={tech} className="text-[9px] font-black text-slate-400 border border-slate-200 px-2 py-1 rounded">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
 
                     </div>
                 </section>

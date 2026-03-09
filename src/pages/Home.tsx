@@ -45,12 +45,14 @@ const Home: React.FC = () => {
               <span className="text-slate-300">& UI/UX.</span>
             </h1>
             <p className="mt-8 text-lg md:text-xl text-gray-500 max-w-xl leading-relaxed">
-              Crafting premium visual identities and high-end digital interfaces. 
-              I turn your vision into <span className="font-bold text-slate-800">unforgettable digital journeys.</span>
+              Bilingual expert in 
+              <span className="font-bold text-slate-800"> digital transformation </span> 
+              and software architecture. I bridge the gap between complex institutional needs and 
+              <span className="font-bold text-slate-800"> secure, high-performance technology solutions. </span>
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-               <a href="/Myprojects">
+               <a href="/Myportofolio">
                 <button 
                 className="px-8 py-4 rounded-full text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform"
                 style={{ backgroundColor: brandColor }}

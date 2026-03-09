@@ -1,7 +1,7 @@
 import './index.css'
 import App from './App.tsx'
 import About from './pages/About.tsx'
-import Myproject from './pages/Myprojects.tsx';
+import Myportofolio from './pages/Myprojects.tsx';
 import Contact from './pages/Contact.tsx';
 import Brand from './components/Brand.tsx';
 import WebDesign from './components/Web.tsx';
@@ -18,7 +18,7 @@ if (root) {
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/Aboutme" element={<About />} />
-        <Route path="/Myprojects" element={<Myproject/>} />
+        <Route path="/Myportofolio" element={<Myportofolio/>} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Brand" element={<Brand />} />
         <Route path="/WebDesign" element={<WebDesign />} />

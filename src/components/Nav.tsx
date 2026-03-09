@@ -25,7 +25,10 @@ const Nav: React.FC = () => {
                     
                     {/* Logo */}
                     <a href="/" className="z-[60]">
-                        <img src={logo} alt="Logo" className="w-24 md:w-32 h-auto" />
+                        {/* <img src={logo} alt="Logo" className="w-24 md:w-32 h-auto" /> */}
+                        <h2 className="text-2xl md:text-3xl  font-bold uppercase tracking-widest" style={{ color: brandColor }}>
+                            Portfolio
+                        </h2>
                     </a>
 
                     {/* Hamburger Button */}
@@ -47,7 +50,7 @@ const Nav: React.FC = () => {
                         ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible md:opacity-100 md:visible'}
                     `}>
                         <ul className="flex flex-col md:flex-row items-center gap-8 md:gap-10 list-none">
-                            {['Home', 'My Projects', 'About Me'].map((item) => {
+                            {['Home', 'My Portofolio', 'About Me'].map((item) => {
                                 const path = item === 'Home' ? '/' : `/${item.replace(/\s/g, '')}`;
                                 return (
                                     <li key={item} className="relative group">
@@ -82,8 +85,6 @@ const Nav: React.FC = () => {
                 </div>
             </nav>
 
-            {/* Spacer pour compenser la nav fixed (pour ne pas que le contenu passe dessous) */}
-            <div className="h-20 md:h-28"></div>
         </>
     );
 }
