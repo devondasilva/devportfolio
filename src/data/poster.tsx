@@ -18,7 +18,8 @@ import S19 from '../assets/img/S19.jpeg';
 import S20 from '../assets/img/S20.jpeg';
 import S21 from '../assets/img/S21.jpeg';
 import S22 from '../assets/img/S22.jpg';
-import S24 from '../assets/img/S23.png'
+import S24 from '../assets/img/S23.png';
+import S25 from '../assets/img/S24.jpg';
 
 
 
@@ -43,6 +44,7 @@ export const itemData: PosterItem[] = [
   { img: S8, title: 'Social Media' },
   { img: S9, title: 'Photography' },
     { img: S24, title: 'Flyer' },
+    { img: S25, title: 'Banner' },
   { img: S10, title: 'Modern UI' },
   { img: S11, title: 'Mobile App' },
   { img: S14, title: 'Product Design' },
